@@ -1,0 +1,7 @@
+/.husky
+/.svelte-kit
+/.vscode
+node_modules
+/static
+/build
+/drizzle

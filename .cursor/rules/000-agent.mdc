@@ -1,0 +1,39 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+---
+description: 
+globs: 
+alwaysApply: true
+---
+---
+description: Default requirements for the SvelteKit application
+globs: 
+---
+- Write SvelteKit v2(https://svelte.dev/docs/kit/introduction) and Svelte v5(https://svelte.dev/docs/svelte/overview) code.
+- Always use TypeScript.
+
+## typescript-usage
+
+- Use the latest TypeScript syntax.
+
+## svelte-component
+
+- Use TypeScript syntax in <script> tags:
+```svelte
+<script lang="ts">
+  // TypeScript code here
+</script>
+```
+
+## ui-and-styling
+
+- Use Flowbite-Svelte and Tailwind for components and styling.
+- Implement responsive design with Tailwind CSS using a mobile-first approach.
+
+## database-querying-and-data-model-creation
+
+- Use DrizzleORM (node-postgres) to query the database.
+- For data schemas, read the `src/server/db/schema` files.

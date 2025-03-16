@@ -1,0 +1,13 @@
+{
+	"recommendations": [
+		"vivaxy.vscode-conventional-commits",
+		"esbenp.prettier-vscode",
+		"svelte.svelte-vscode",
+		"stordahl.sveltekit-snippets",
+		"bradlc.vscode-tailwindcss",
+		"vitest.explorer",
+		"inlang.vs-code-extension",
+		"yoavbls.pretty-ts-errors",
+		"meganrogge.template-string-converter"
+	]
+}
