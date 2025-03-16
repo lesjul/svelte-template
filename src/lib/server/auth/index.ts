@@ -2,9 +2,10 @@ import dotenv from "dotenv";
 import { betterAuth } from "better-auth";
 import { drizzleAdapter } from "better-auth/adapters/drizzle";
 import { v7 as uuidv7 } from "uuid";
-import argon2 from "argon2";
 import { db } from "$lib/server/drizzle";
 import { user } from "$lib/server/db";
+import { argon2Hash, argon2Verify } from "$lib/server/auth/password";
+
 dotenv.config();
 
 export const auth = betterAuth({
@@ -19,10 +20,10 @@ export const auth = betterAuth({
 	plugins: [],
 	emailAndPassword: {
 		enabled: true,
-		// password: {
-		// 	hash: argon2.hash,
-		// 	verify: argon2Verify,
-		// },
+		password: {
+			hash: argon2Hash,
+			verify: argon2Verify,
+		},
 	},
 	advanced: {
 		generateId: () => uuidv7(),
