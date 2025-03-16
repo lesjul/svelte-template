@@ -5,6 +5,7 @@ import { v7 as uuidv7 } from "uuid";
 import argon2 from "argon2";
 import { db } from "$lib/server/drizzle";
 import { user } from "$lib/server/db";
+dotenv.config();
 
 export const auth = betterAuth({
 	database: drizzleAdapter(db, {
