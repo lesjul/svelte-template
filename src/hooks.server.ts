@@ -1,6 +1,6 @@
 import { sequence } from "@sveltejs/kit/hooks";
 import { type Handle } from "@sveltejs/kit";
-import { paraglideMiddleware } from "$lib/paraglide/server";
+import { paraglideMiddleware } from "$lib/common/paraglide/server";
 import { svelteKitHandler } from "better-auth/svelte-kit";
 import { auth } from "$lib/server/auth";
 

@@ -1,7 +1,7 @@
 <script lang="ts">
 	import "../app.css";
 	import { page } from "$app/state";
-	import { locales, localizeHref } from "$lib/paraglide/runtime";
+	import { locales, localizeHref } from "$lib/common/paraglide/runtime";
 
 	let { children } = $props();
 </script>
