@@ -3,7 +3,7 @@ import { betterAuth } from "better-auth";
 import { drizzleAdapter } from "better-auth/adapters/drizzle";
 import { v7 as uuidv7 } from "uuid";
 import { db } from "$lib/server/drizzle";
-import { user } from "$lib/server/db";
+import { usersTable } from "$lib/server/db";
 import { argon2Hash, argon2Verify } from "$lib/server/auth/password";
 
 dotenv.config();
@@ -13,7 +13,7 @@ export const auth = betterAuth({
 		provider: "pg",
 		usePlural: true,
 		schema: {
-			user,
+			user: usersTable,
 		},
 	}),
 	secret: process.env.BETTER_AUTH_SECRET,
