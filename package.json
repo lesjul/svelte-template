@@ -21,11 +21,11 @@
 		"test:unit": "vitest",
 		"test": "npm run test:unit -- --run && npm run test:e2e",
 		"test:e2e": "playwright test",
-		"paraglide:i18n": "bunx @inlang/paraglide-js compile --project ./project.inlang --outdir ./src/lib/paraglide",
+		"paraglide:i18n": "bunx @inlang/paraglide-js compile --project ./project.inlang --outdir ./src/lib/common/paraglide",
 		"prepare": "husky"
 	},
 	"dependencies": {
-		"@inlang/paraglide-js": "^2.0.6",
+		"@inlang/paraglide-js": "^2.0.8",
 		"argon2": "^0.41.1",
 		"better-auth": "^1.2.5",
 		"dotenv": "^16.4.7",
@@ -52,7 +52,7 @@
 		"drizzle-kit": "^0.30.6",
 		"eslint": "^9.23.0",
 		"eslint-config-prettier": "^10.1.1",
-		"eslint-plugin-svelte": "^3.3.3",
+		"eslint-plugin-svelte": "^3.4.0",
 		"globals": "^16.0.0",
 		"husky": "^9.1.7",
 		"jsdom": "^26.0.0",
