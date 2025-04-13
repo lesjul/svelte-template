@@ -1,4 +1,4 @@
-import { type PageServerLoad } from "../example/$types";
+import type { PageServerLoad } from "./$types";
 import { error } from "@sveltejs/kit";
 import { db } from "$lib/server/drizzle";
 import { ExempleRepository } from "$lib/server/repositories";
