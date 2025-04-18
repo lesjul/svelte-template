@@ -4,14 +4,14 @@ import { paraglideMiddleware } from "$lib/common/paraglide/server";
 import { svelteKitHandler } from "better-auth/svelte-kit";
 import { auth } from "$lib/server/auth";
 
-const paraglideHandle: Handle = ({ event, resolve }) =>
-	paraglideMiddleware(event.request, ({ locale }) => {
+const handleParaglide: Handle = ({ event, resolve }) =>
+	paraglideMiddleware(event.request, ({ request, locale }) => {
+		event.request = request;
+
 		return resolve(event, {
-			transformPageChunk: ({ html }) => html.replace("%lang%", locale),
+			transformPageChunk: ({ html }) => html.replace("%paraglide.lang%", locale),
 		});
 	});
-
-const handleParaglide: Handle = paraglideHandle;
 
 const handleBetterAuth: Handle = async ({ event, resolve }) => {
 	return svelteKitHandler({ event, resolve, auth });
