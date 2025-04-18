@@ -22,7 +22,7 @@
 		"test": "npm run test:unit -- --run && npm run test:e2e",
 		"test:e2e": "playwright test",
 		"paraglide:i18n": "bunx @inlang/paraglide-js compile --project ./project.inlang --outdir ./src/lib/common/paraglide",
-		"prepare": "husky"
+		"prepare": "svelte-kit sync && husky"
 	},
 	"dependencies": {
 		"@inlang/paraglide-js": "^2.0.11",
@@ -59,14 +59,14 @@
 		"prettier": "^3.5.3",
 		"prettier-plugin-svelte": "^3.3.3",
 		"prettier-plugin-tailwindcss": "^0.6.11",
-		"svelte": "^5.27.3",
+		"svelte": "^5.28.0",
 		"svelte-check": "^4.1.6",
 		"svelte-render-scan": "^1.1.0",
 		"tailwindcss": "^4.1.4",
 		"tsx": "^4.19.3",
 		"typescript": "^5.8.3",
 		"typescript-eslint": "^8.30.1",
-		"vite": "^6.3.1",
+		"vite": "^6.3.2",
 		"vite-plugin-remove-console": "^2.2.0",
 		"vite-plugin-strip-comments": "^0.0.5",
 		"vitest": "^3.1.1"
