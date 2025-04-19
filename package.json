@@ -15,6 +15,7 @@
 		"db:pull": "drizzle-kit pull",
 		"db:up": "drizzle-kit up",
 		"db:studio": "drizzle-kit studio",
+		"db:seed": "bunx @better-auth-kit/cli@latest seed",
 		"format": "prettier --write .",
 		"lint": "prettier --check . && eslint .",
 		"lint:fix": "prettier --check . && eslint . --fix",
@@ -37,6 +38,7 @@
 		"valibot": "^1.0.0"
 	},
 	"devDependencies": {
+		"@better-auth-kit/seed": "^1.0.10",
 		"@eslint/compat": "^1.2.8",
 		"@eslint/js": "^9.24.0",
 		"@playwright/test": "^1.52.0",
