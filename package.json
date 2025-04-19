@@ -23,7 +23,7 @@
 		"test": "npm run test:unit -- --run && npm run test:e2e",
 		"test:e2e": "playwright test",
 		"paraglide:i18n": "bunx @inlang/paraglide-js compile --project ./project.inlang --outdir ./src/lib/common/paraglide",
-		"prepare": "svelte-kit sync && husky"
+		"prepare": "svelte-kit sync"
 	},
 	"dependencies": {
 		"@inlang/paraglide-js": "^2.0.11",
@@ -55,8 +55,8 @@
 		"eslint-config-prettier": "^10.1.2",
 		"eslint-plugin-svelte": "^3.5.1",
 		"globals": "^16.0.0",
-		"husky": "^9.1.7",
 		"jsdom": "^26.1.0",
+		"lefthook": "^1.11.10",
 		"prettier": "^3.5.3",
 		"prettier-plugin-svelte": "^3.3.3",
 		"prettier-plugin-tailwindcss": "^0.6.11",
