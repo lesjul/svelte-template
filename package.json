@@ -32,7 +32,6 @@
 		"dotenv": "^16.5.0",
 		"drizzle-orm": "^0.42.0",
 		"pg": "^8.14.1",
-		"postgres": "^3.4.5",
 		"sveltekit-superforms": "^2.24.1",
 		"uuid": "^11.1.0",
 		"valibot": "^1.0.0"
