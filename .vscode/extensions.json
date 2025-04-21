@@ -8,6 +8,7 @@
 		"vitest.explorer",
 		"inlang.vs-code-extension",
 		"yoavbls.pretty-ts-errors",
-		"meganrogge.template-string-converter"
+		"meganrogge.template-string-converter",
+		"ms-playwright.playwrigh"
 	]
 }

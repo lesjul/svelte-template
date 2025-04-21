@@ -6,4 +6,6 @@ export default defineConfig({
 		port: 4173,
 	},
 	testDir: "e2e",
+	testMatch: "e2e/*.e2e.test.{js,ts}",
+	timeout: 10_000, // 10 seconds
 });
