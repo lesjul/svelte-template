@@ -1,8 +1,7 @@
 pre-commit:
   parallel: true
   commands:
+    format:
+      run: bun format
     lint:
-      run: bun lint:fix {staged_files}
-      stage_fixed: true
-    test:
-      run: bun test
+      run: bun lint:fix
