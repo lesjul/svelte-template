@@ -1,6 +1,6 @@
 import { eq } from "drizzle-orm";
 import { type NodePgClient, type NodePgDatabase } from "drizzle-orm/node-postgres";
-import { usersTable } from "../db/schema";
+import { whatevers as whateversTable } from "../db/app-schema";
 
 export class ExempleRepository {
 	private _db: NodePgDatabase<Record<string, never>> & { $client: NodePgClient };
@@ -12,8 +12,8 @@ export class ExempleRepository {
 	public async fetchById(id: string): Promise<void> {
 		await this._db
 			.select()
-			.from(usersTable)
-			.where(eq(usersTable.id, parseInt(id)))
-			.orderBy(usersTable.id);
+			.from(whateversTable)
+			.where(eq(whateversTable.id, id))
+			.orderBy(whateversTable.id);
 	}
 }

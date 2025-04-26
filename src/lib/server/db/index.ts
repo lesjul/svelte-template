@@ -1,6 +1,3 @@
-import { ExempleRepository } from "../repositories/exemple.repository";
+import { whatevers } from "./app-schema";
 
-import { usersTable } from "./schema";
-
-export { ExempleRepository };
-export { usersTable };
+export { whatevers };
